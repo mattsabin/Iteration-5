@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <style>
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+    <title>Remove Songs Page</title>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main class = "add-remove-main">
+        <div class="add-remove-container">
+            <h1>Remove Songs</h1>
+            <input type="text" class="add-remove-search-bar" id="remove-search-bar" placeholder="Search...">
+            <ul id="liked-songs-list" class="scrollable-list">
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+                <li>
+                    Song Result
+                    <input type="checkbox" class="checkbox">
+                </li>
+            </ul>
+            <button onclick = "alert('Songs Removed')" class="add-button" id="removeSongButton">Remove Songs</button>
+            <dialog id="add songs dialog">
+                <p>Songs added.</p>
+                <button id="closeDialogButton">Close</button>
+            </dialog>
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>

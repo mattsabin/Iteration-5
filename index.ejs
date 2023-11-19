@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <title>Listener Page</title>
+</head>
+<body>
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+<main>
+    <div class="container-wrapper">
+        <div class="container" id="leftContainer">
+            <h5>Liked Songs</h5>
+            <br>
+            <ul class="scrollable-list" id="listenerPageLikedSongs">
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+                <li>Song Name</li>
+            </ul>
+        </div>
+        <div class ="container" id= "central-container">
+            <div class="container" id="container1">
+                <div class="container-text">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/be/MBDTF_ALT.jpg" alt="Picture of Album Playing" height="200">
+                        <figcaption>Sample Song Name<br>Sample Artist Name<br>Sample Album Name</figcaption>
+                    </figure>
+                        <audio src="music.mp3" controls>
+                            Your browser does not support the audio element.
+                        </audio>
+                </div>
+            </div>
+            
+            <div class="container" id="container2">
+                <div class="container" id="preferences">
+                    <h5>Preferences</h5>
+                    <div class="container" id="preferences-text">
+                        <p>Text A</p>
+                        <p>Text B</p>
+                        <p>Text C</p>
+                    </div>
+                    <button class="add-preferences-button"> Add Preferences </button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container" id="rightContainer">
+            <h5>Preferred Artists</h5>
+            <ul class="scrollable-list" id="listenerPageLikedArtists">
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+                <li>DJ Name</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
